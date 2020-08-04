@@ -93,7 +93,8 @@ Add-PnPField -List "UserRewards" -DisplayName "Status" -InternalName "Status" -T
 Add-PnPField -List "UserRewards" -DisplayName "VoucherCode" -InternalName "VoucherCode" -Type Text -AddToDefaultView
 Add-PnPField -List "UserRewards" -DisplayName "CreatedOn" -InternalName "CreatedOn" -Type DateTime -AddToDefaultView
 
-#Creates Incentives List items
+#Creates Incentives List items for default M365 Challenge
+#I picked the top playlists, but you can create more or less challengs.  You can skip this step and use the Admin tool in the App to create challenges.  You need to manually update the asset link in SPO Incentives List to link to your custom playlist 
 Add-PnPListItem -List "Incentives" -Values @{"Title" = "First Days"; "Diff"="1"}
 Add-PnPListItem -List "Incentives" -Values @{"Title" = "Modern Workplace"; "Diff"="2"}
 Add-PnPListItem -List "Incentives" -Values @{"Title" = "Work Remotely"; "Diff"="3"}
